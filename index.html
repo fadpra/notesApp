@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <h2 style="margin-bottom:10px;">My Notes List</h2>
+                
+                <div id="notes">
+
+                    <!-- <div class="note">
+                        <h3 class="noteTitle">Lorem Ipsum</h3>
+                        <h4 class="noteSub">Lorem Ipsum</h4>
+                        <button class="open">Open</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div id="displayNote">
+                <h1 id="displayTitle">My Notes App</h1>
+                <h3 id="displayContent">Click on a note that you want to see!</h3>
+            </div>
+
+            <div id="addNoteDiv">
+                <h2>Add Note</h2>
+
+                <label for="title">Title</label>
+                <input name="title" id="title" type="text" maxlength="100">
+                
+                <label for="content">Content</label>               
+                <textarea name="content" id="content" cols="30" rows="20"></textarea>
+                <div id="subDrop">Choose Subject ⬆️</div>
+                <div id="subList">
+                    <li class="sub1">Religion / Agama</li>
+                    <li class="sub1">Civics / PKN</li>
+                    <li class="sub1">Indonesian / Bahasa</li>
+                    <li class="sub1">Compulsory Math / Mat. Wajib</li>
+                    <li class="sub1">History / Sejarah</li>
+                    <li class="sub1">English / Bahasa Inggris</li>
+                    <li class="sub2">Arts / Kesenian</li>
+                    <li class="sub2">PE / PJOK</li>
+                    <li class="sub2">ICT / PKWU</li>
+                    <li class="sub3">Math Elective / Mat. Minat</li>
+                    <li class="sub3">Physics / Fisika</li>
+                    <li class="sub3">Chemistry / Kimia</li>
+                    <li class="sub3">Biology / Biologi</li>
+                    <li class="sub4">Economy / Ekonomi</li>
+                    <li class="sub5">Other / Lain</li>
+                    <li class="sub5">Other / Lain</li>
+                </div>
+                <input id="subject" type="text" readonly>
+        
+                <button id="addNote">Add Note</button>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

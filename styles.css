@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Neucha&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Neucha", cursive;
+    overflow-x: hidden;
+}
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: left;
+    background-color: aquamarine transparent;
+    width: fit-content;
+    margin: 10px;
+}
+
+#container {
+    background-color: blue transparent;
+    display: flex;
+    height: 100vh
+}
+
+#sidebar {
+    background-color: lightgrey;
+    width: 25%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+#sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.note {
+    background-color: beige;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.noteSub {
+    margin-top: 10px;
+}
+
+#displayNote {
+    width: 45%;
+    background-color: blueviolet transparent;
+    overflow-y: scroll;
+}
+
+#displayNote h3 {
+    margin: 10px;
+    text-align: justify;
+}
+
+#addNoteDiv {
+    background-color: lightgrey;
+    width: 30%;
+    padding: 10px;
+}
+
+#addNote {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    font-family: "Neucha", cursive;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#addNote:hover {
+    opacity: 0.5;
+}
+
+.open,.edit, .delete {
+    padding: 2px 10px;
+    font-family: "Neucha", cursive;
+    margin-top: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 94%;
+}
+
+textarea {
+    width: 94%;
+    resize: none;
+    padding: 10px;
+    height: 50%;
+}
+
+.subject {
+    padding: 5px;
+}
+
+#subDrop {
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    margin: 5px 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#subDrop:hover {
+    opacity: 0.5;
+}
+
+#subList {
+    display: none;
+}
+
+#subDrop:hover + #subList, #subList:hover {
+    position:absolute;
+    top: 15px;
+    right: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.sub1,.sub2,.sub3,.sub4,.sub5 {
+    list-style: none;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sub1:hover,.sub2:hover,.sub3:hover,.sub4:hover,.sub5:hover{
+    background-color: white;
+}
+
+.sub1 {
+    background-color: rgb(246, 144, 178);
+}
+
+.sub2 {
+    background-color: lightskyblue;
+}
+
+.sub3 {
+    background-color: lightgreen;
+}
+
+.sub4 {
+    background-color: rgb(246, 246, 182);
+}
+
+.sub5 {
+    background-color: violet;
+}
